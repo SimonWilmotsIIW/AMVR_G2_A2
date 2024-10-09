@@ -16,11 +16,11 @@ public class CheckIfGrabbed : MonoBehaviour
     {
         if (grabbable.isGrabbed)
         {
-            Collider gunCollider = transform.GetComponent<Collider>();
+            Collider gunCollider = transform.GetComponentInChildren<Collider>();
             gunCollider.isTrigger = false;
         } else
         {
-            Collider gunCollider = transform.GetComponent<Collider>();
+            Collider gunCollider = transform.GetComponentInChildren<Collider>();
             gunCollider.isTrigger = true;
         }
     }
