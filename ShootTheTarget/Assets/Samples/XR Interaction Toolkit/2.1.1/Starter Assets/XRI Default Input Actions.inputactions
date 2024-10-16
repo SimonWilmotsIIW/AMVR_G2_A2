@@ -714,8 +714,8 @@
                 {
                     "name": "",
                     "id": "1ce80054-410d-4112-a332-50faa7fb4f23",
-                    "path": "<XRController>{RightHand}/gripPressed",
-                    "interactions": "",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Select",
@@ -736,7 +736,7 @@
                 {
                     "name": "",
                     "id": "fa59aed1-ae0b-4074-a58c-294b85f46228",
-                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "path": "<OpenVROculusTouchController>/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",

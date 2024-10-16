@@ -20,4 +20,9 @@ public class GameMenuManager : MonoBehaviour
         //     menu.SetActive(!menu.activeSelf);
         // }
     }
+
+    public void testButton()
+    {
+        Debug.Log("Button clicked");
+    }
 }
