@@ -8,6 +8,7 @@ public class CheckIfGrabbed : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed=10;
     public GameObject bulletSpawnPoint;
+    public AudioSource gunSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,13 +53,10 @@ public class CheckIfGrabbed : MonoBehaviour
     void ShootGun()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
-
         Rigidbody rbBullet = bullet.GetComponent<Rigidbody>();
-
         rbBullet.velocity = bulletSpawnPoint.transform.forward * bulletSpeed;
-
+        gunSound.Play();
         rbBullet.useGravity = false; // Disable gravity initially
-
         // Start a coroutine to enable gravity after a delay
         StartCoroutine(EnableGravityAfterDelay(rbBullet, 4));
 
