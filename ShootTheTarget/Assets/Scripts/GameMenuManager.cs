@@ -23,6 +23,6 @@ public class GameMenuManager : MonoBehaviour
 
     public void testButton()
     {
-        Debug.Log("Button clicked");
+        Debug.LogError("Button clicked");
     }
 }
