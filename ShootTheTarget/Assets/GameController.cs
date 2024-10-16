@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
             raycastInteraction.SetActive(true);
             gameMenu.SetActive(true);
             gameMenuActive = true;
+            gameMenu.GetComponent<FollowPlayer>().SpawnMenu();
         }
         else if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RTouch) && gameMenuActive == true)
         {
