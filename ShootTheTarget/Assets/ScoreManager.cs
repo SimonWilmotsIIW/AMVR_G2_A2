@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
 
     public Text scoreText; // The UI Text element to display the score
-    private int currentScore = 0;
+    private int currentScore = 50;
 
     void Awake()
     {
