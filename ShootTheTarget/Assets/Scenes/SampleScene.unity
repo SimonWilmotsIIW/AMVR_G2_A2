@@ -897,6 +897,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1416393003}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &716329149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1416393003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &716329154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1712,6 +1718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076765372}
   - component: {fileID: 1076765371}
+  - component: {fileID: 1076765373}
   m_Layer: 0
   m_Name: GameMenu
   m_TagString: Untagged
@@ -1759,6 +1766,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1076765373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076765370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3347014fbb6265c4688f54bc7633b91d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 716329149}
+  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &1099641964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,7 +3223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3749649100672265668, guid: 8e5d0490665dfbd499f391ec32c3f15e,
     type: 3}
-  bulletSpeed: 20
+  bulletSpeed: 10
   bulletSpawnPoint: {fileID: 1989314249}
 --- !u!1 &1958021944
 GameObject:
