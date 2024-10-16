@@ -21,8 +21,9 @@ public class GameMenuManager : MonoBehaviour
         // }
     }
 
-    public void testButton()
+    public void ResetScore()
     {
-        Debug.LogError("Button clicked");
+        ScoreManager scoreManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
+        scoreManager.ResetScore();
     }
 }

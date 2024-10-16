@@ -33,4 +33,10 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = "Score: " + currentScore.ToString();
     }
+    public void ResetScore()
+    {
+        currentScore = 0;
+        UpdateScoreUI();
+    }
+
 }
