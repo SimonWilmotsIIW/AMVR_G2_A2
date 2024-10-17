@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameMenuManager : MonoBehaviour
 {   
@@ -25,5 +26,10 @@ public class GameMenuManager : MonoBehaviour
     {
         ScoreManager scoreManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
         scoreManager.ResetScore();
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }
